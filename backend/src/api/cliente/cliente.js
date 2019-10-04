@@ -1,5 +1,6 @@
 const restful = require('node-restful')
 const mongoose = restful.mongoose
+
 const clienteSchema = new mongoose.Schema({
     nome: { type: String, required: true },
     data_nasci: { type: Date, required: true },
@@ -17,4 +18,5 @@ const clienteSchema = new mongoose.Schema({
     senha: { type: String, required: true },
     sexo: { type: String, required: true }
 })
+
 module.exports = restful.model('Cliente', clienteSchema)

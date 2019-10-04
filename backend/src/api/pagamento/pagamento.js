@@ -1,5 +1,6 @@
 const restful = require('node-restful')
 const mongoose = restful.mongoose
+
 const pagamentoSchema = new mongoose.Schema({
     placa: { type: String, required: true },
     data_entrada: { type: Date, required: true },
@@ -11,4 +12,5 @@ const pagamentoSchema = new mongoose.Schema({
     tipo_pagamento: { type: String, required: true },
     status: { type: String, required: true }
 })
+
 module.exports = restful.model('Pagamento', pagamentoSchema)

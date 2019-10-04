@@ -1,5 +1,6 @@
 const restful = require('node-restful')
 const mongoose = restful.mongoose
+
 const estacionamentoSchema = new mongoose.Schema({
     nome: { type: String, required: true },
     num_vagas: { type: Number, required: true },
@@ -16,4 +17,5 @@ const estacionamentoSchema = new mongoose.Schema({
     descricao: { type: String, required: true },
     status: { type: String, required: true }
 })
+
 module.exports = restful.model('Estacionamento', estacionamentoSchema)
