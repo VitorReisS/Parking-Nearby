@@ -1,11 +1,11 @@
 {
-  "name": "backend",
+  "name": "parking-nearby-backend",
   "version": "1.0.0",
   "description": "",
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start src/loader.js --name Parking-Nearby"
+    "production": "pm2 start src/loader.js --name parking-nearby-backend"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,10 @@
     "node-restful": "^0.2.5",
     "nodemon": "^1.11.0",
     "pm2": "^2.1.5"
+  },
+  "dependencies": {
+    "express-query-int": "^1.0.1",
+    "lodash": "^4.17.4",
+    "mongoose-paginate": "^5.0.3"
   }
 }
