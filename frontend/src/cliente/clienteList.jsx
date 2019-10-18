@@ -9,6 +9,29 @@ class ClienteList extends Component {
         this.props.getList()
     }
 
+    renderRows() {
+        const list = this.props.list || []
+        return list.map(bc => (
+            <tr key={bc._id}>
+                <td>{bc.name}</td>
+                <td>{bc.data_nasci}</td>
+                <td>{bc.celular}</td>
+                <td>{bc.cpf}</td>
+                <td>{bc.rg}</td>
+                <td>{bc.cep}</td>
+                <td>{bc.nome_rua}</td>
+                <td>{bc.num_casa}</td>
+                <td>{bc.complemento}</td>
+                <td>{bc.bairro}</td>
+                <td>{bc.cidade}</td>
+                <td>{bc.estado}</td>
+                <td>{bc.email}</td>
+                <td>{bc.senha}</td>
+                <td>{bc.sexo}</td>
+            </tr>
+        ))
+    }
+
     render() {
         return (
             <div>
@@ -33,7 +56,7 @@ class ClienteList extends Component {
                         </tr>
                     </thead>
                     <tbody>
-
+                        {this.renderRows()}
                     </tbody>
                 </table>
             </div>
@@ -41,6 +64,6 @@ class ClienteList extends Component {
     }
 }
 
-const mapStateToProps = state => ({list: state.cliente.list})
-const mapDispatchToProps = dispatch => bindActionCreators({getList}, dispatch)
+const mapStateToProps = state => ({ list: state.cliente.list })
+const mapDispatchToProps = dispatch => bindActionCreators({ getList }, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(ClienteList)
