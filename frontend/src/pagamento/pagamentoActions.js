@@ -2,9 +2,9 @@ import axios from 'axios'
 const BASE_URL = 'http://localhost:3003/api'
 
 export function getList() {
-    const request = axios.get(`${BASE_URL}/clientes`)
+    const request = axios.get(`${BASE_URL}/pagamentos`)
     return {
-        type: 'CLIENTES_FETCHED',
+        type: 'PAGAMENTOS_FETCHED',
         payload: request
     }
 }
