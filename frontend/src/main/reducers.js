@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux'
+import { reducer as formReducer } from 'redux-form'
 
 import TabReducer from '../common/tab/tabReducer'
 import ClienteReducer from '../cliente/clienteReducer'
@@ -14,7 +15,8 @@ const rootReducer = combineReducers({
     estacionamento: EstacionamentoReducer,
     funcionario: FuncionarioReducer,
     pagamento: PagamentoReducer,
-    veiculo: VeiculoReducer
+    veiculo: VeiculoReducer,
+    form: formReducer
 })
 
 export default rootReducer
