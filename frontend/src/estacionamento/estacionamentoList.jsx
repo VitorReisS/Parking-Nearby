@@ -9,6 +9,27 @@ class EstacionamentoList extends Component {
         this.props.getList()
     }
 
+    renderRows() {
+        const list = this.props.list || []
+        return list.map(bc => (
+            <tr key={bc._id}>
+                <td>{bc.nome}</td>
+                <td>{bc.num_vagas}</td>
+                <td>{bc.horario}</td>
+                <td>{bc.cep}</td>
+                <td>{bc.nome_rua}</td>
+                <td>{bc.num_casa}</td>
+                <td>{bc.bairro}</td>
+                <td>{bc.cidade}</td>
+                <td>{bc.valor_mensal}</td>
+                <td>{bc.valor_diario}</td>
+                <td>{bc.tipo_pagamento}</td>
+                <td>{bc.descricao}</td>
+                <td>{bc.status}</td>
+            </tr>
+        ))
+    }
+
     render() {
         return (
             <div>

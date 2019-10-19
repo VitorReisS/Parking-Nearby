@@ -9,6 +9,29 @@ class FuncionarioList extends Component {
         this.props.getList()
     }
 
+    renderRows() {
+        const list = this.props.list || []
+        return list.map(bc => (
+            <tr key={bc._id}>
+                <td>{bc.nome}</td>
+                <td>{bc.data_nasci}</td>
+                <td>{bc.cpf}</td>
+                <td>{bc.email}</td>
+                <td>{bc.senha}</td>
+                <td>{bc.celular}</td>
+                <td>{bc.estado}</td>
+                <td>{bc.cep}</td>
+                <td>{bc.nome_rua}</td>
+                <td>{bc.complemento}</td>
+                <td>{bc.num_rua}</td>
+                <td>{bc.bairro}</td>
+                <td>{bc.cidade}</td>
+                <td>{bc.estado}</td>
+                <td>{bc.sexo}</td>
+            </tr>
+        ))
+    }
+
     render() {
         return (
             <div>

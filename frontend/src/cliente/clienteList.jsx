@@ -13,7 +13,7 @@ class ClienteList extends Component {
         const list = this.props.list || []
         return list.map(bc => (
             <tr key={bc._id}>
-                <td>{bc.name}</td>
+                <td>{bc.nome}</td>
                 <td>{bc.data_nasci}</td>
                 <td>{bc.celular}</td>
                 <td>{bc.cpf}</td>

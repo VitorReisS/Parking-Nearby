@@ -9,6 +9,19 @@ class VeiculoList extends Component {
         this.props.getList()
     }
 
+    renderRows() {
+        const list = this.props.list || []
+        return list.map(bc => (
+            <tr key={bc._id}>
+                <td>{bc.cliente}</td>
+                <td>{bc.placa}</td>
+                <td>{bc.tipo_veiculo}</td>
+                <td>{bc.data_entrada}</td>
+                <td>{bc.data_saida}</td>
+            </tr>
+        ))
+    }
+
     render() {
         return (
             <div>

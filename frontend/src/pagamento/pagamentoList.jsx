@@ -9,6 +9,23 @@ class PagamentoList extends Component {
         this.props.getList()
     }
 
+    renderRows() {
+        const list = this.props.list || []
+        return list.map(bc => (
+            <tr key={bc._id}>
+                <td>{bc.placa}</td>
+                <td>{bc.data_entrada}</td>
+                <td>{bc.data_saida}</td>
+                <td>{bc.hora_entrada}</td>
+                <td>{bc.hora_saida}</td>
+                <td>{bc.valor}</td>
+                <td>{bc.funcionario}</td>
+                <td>{bc.tipo_pagamento}</td>
+                <td>{bc.status}</td>
+            </tr>
+        ))
+    }
+
     render() {
         return (
             <div>
