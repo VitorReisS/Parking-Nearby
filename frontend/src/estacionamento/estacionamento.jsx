@@ -7,9 +7,9 @@ class Estacionamento extends Component {
     render() {
         return (
             <div>
-                <ContentHeader title='Funcionario' small='Cadastro' />
+                <ContentHeader title='Estacionamento' small='Cadastro' />
                 <Content>
-                    Funcionario
+                    Estacionamento
                 </Content>
             </div>
         )
