@@ -30,3 +30,10 @@ export function create(values) {
             })
     }
 }
+
+export function showUpdate(estacionamento) {
+    return [
+        showTabs('tabUpdate'),
+        selectTab('tabUpdate')
+    ]
+}

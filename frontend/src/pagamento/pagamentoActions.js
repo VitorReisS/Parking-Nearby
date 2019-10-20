@@ -30,3 +30,10 @@ export function create(values) {
             })
     }
 }
+
+export function showUpdate(pagamento) {
+    return [
+        showTabs('tabUpdate'),
+        selectTab('tabUpdate')
+    ]
+}

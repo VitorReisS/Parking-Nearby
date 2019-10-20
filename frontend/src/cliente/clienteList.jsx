@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { getList } from './clienteActions'
+import { getList, showUpdate } from './clienteActions'
 
 class ClienteList extends Component {
 
@@ -28,6 +28,11 @@ class ClienteList extends Component {
                 <td>{bc.email}</td>
                 <td>{bc.senha}</td>
                 <td>{bc.sexo}</td>
+                <td>
+                    <button className='btn btn-warning' onClick={() => this.props.showUpdate(bc)}>
+                        <i className='fa fa-pencil'></i>
+                    </button>
+                </td>
             </tr>
         ))
     }
@@ -53,6 +58,7 @@ class ClienteList extends Component {
                             <th>Email</th>
                             <th>Senha</th>
                             <th>Sexo</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,5 +71,5 @@ class ClienteList extends Component {
 }
 
 const mapStateToProps = state => ({ list: state.cliente.list })
-const mapDispatchToProps = dispatch => bindActionCreators({ getList }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ getList, showUpdate }, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(ClienteList)

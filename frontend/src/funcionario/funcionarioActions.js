@@ -30,3 +30,10 @@ export function create(values) {
             })
     }
 }
+
+export function showUpdate(funcionario) {
+    return [
+        showTabs('tabUpdate'),
+        selectTab('tabUpdate')
+    ]
+}
