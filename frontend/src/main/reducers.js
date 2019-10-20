@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
 import { reducer as formReducer } from 'redux-form'
+import { reducer as toastrReducer } from 'react-redux-toastr'
 
 import TabReducer from '../common/tab/tabReducer'
 import ClienteReducer from '../cliente/clienteReducer'
@@ -16,7 +17,8 @@ const rootReducer = combineReducers({
     funcionario: FuncionarioReducer,
     pagamento: PagamentoReducer,
     veiculo: VeiculoReducer,
-    form: formReducer
+    form: formReducer,
+    toastr: toastrReducer
 })
 
 export default rootReducer
