@@ -27,4 +27,4 @@ class PagamentoForm extends Component {
     }
 }
 
-export default reduxForm({ form: 'pagamentoForm' })(PagamentoForm)
+export default reduxForm({ form: 'pagamentoForm', destroyOnUnmount: false })(PagamentoForm)

@@ -33,4 +33,4 @@ class FuncionarioForm extends Component {
     }
 }
 
-export default reduxForm({ form: 'funcionarioForm' })(FuncionarioForm)
+export default reduxForm({ form: 'funcionarioForm', destroyOnUnmount: false })(FuncionarioForm)

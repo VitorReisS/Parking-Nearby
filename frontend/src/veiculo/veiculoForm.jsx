@@ -23,4 +23,4 @@ class VeiculoForm extends Component {
     }
 }
 
-export default reduxForm({ form: 'veiculoForm' })(VeiculoForm)
+export default reduxForm({ form: 'veiculoForm', destroyOnUnmount: false })(VeiculoForm)

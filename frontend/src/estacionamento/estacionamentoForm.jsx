@@ -31,4 +31,4 @@ class EstacionamentoForm extends Component {
     }
 }
 
-export default reduxForm({ form: 'estacionamentoForm' })(EstacionamentoForm)
+export default reduxForm({ form: 'estacionamentoForm', destroyOnUnmount: false })(EstacionamentoForm)

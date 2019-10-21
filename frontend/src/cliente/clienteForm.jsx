@@ -33,4 +33,4 @@ class ClienteForm extends Component {
     }
 }
 
-export default reduxForm({ form: 'clienteForm' })(ClienteForm)
+export default reduxForm({ form: 'clienteForm', destroyOnUnmount: false })(ClienteForm)
