@@ -41,7 +41,7 @@ class VeiculoList extends Component {
                             <th>Tipo de Veiculo</th>
                             <th>Data entrada</th>
                             <th>Data Saida</th>
-                            <th>Ações</th>
+                            <th className='table-actions'>Ações</th>
                         </tr>
                     </thead>
                     <tbody>

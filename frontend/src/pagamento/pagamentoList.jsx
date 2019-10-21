@@ -49,7 +49,7 @@ class PagamentoList extends Component {
                             <th>Funcionario</th>
                             <th>Tipo de Pagamento</th>
                             <th>Status</th>
-                            <th>Ações</th>
+                            <th className='table-actions'>Ações</th>
                         </tr>
                     </thead>
                     <tbody>

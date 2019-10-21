@@ -58,7 +58,7 @@ class EstacionamentoList extends Component {
                             <th>Tipo de Pagamento</th>
                             <th>Descrição</th>
                             <th>Status</th>
-                            <th>Ações</th>
+                            <th className='table-actions'>Ações</th>
                         </tr>
                     </thead>
                     <tbody>

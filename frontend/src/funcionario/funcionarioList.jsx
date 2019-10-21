@@ -61,7 +61,7 @@ class FuncionarioList extends Component {
                             <th>Cidade</th>
                             <th>Estado</th>
                             <th>Sexo</th>
-                            <th>Ações</th>
+                            <th className='table-actions'>Ações</th>
                         </tr>
                     </thead>
                     <tbody>

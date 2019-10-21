@@ -61,7 +61,7 @@ class ClienteList extends Component {
                             <th>Email</th>
                             <th>Senha</th>
                             <th>Sexo</th>
-                            <th>Ações</th>
+                            <th className='table-actions'>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
