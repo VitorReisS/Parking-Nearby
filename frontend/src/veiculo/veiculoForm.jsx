@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { reduxForm, Field } from 'redux-form'
 
-import { init } from './clienteActions'
+import { init } from './veiculoActions'
 import LabelAndInput from '../common/form/labelAndInput'
 
 class VeiculoForm extends Component {
