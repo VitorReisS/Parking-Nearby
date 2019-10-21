@@ -10,7 +10,7 @@ import TabsContent from '../common/tab/tabsContent'
 import TabHeader from '../common/tab/tabHeader'
 import TabContent from '../common/tab/tabContent'
 import { selectTab, showTabs } from '../common/tab/tabActions'
-import { create } from './funcionarioActions'
+import { create, update } from './funcionarioActions'
 
 import List from './funcionarioList'
 import Form from './funcionarioForm'
@@ -37,7 +37,7 @@ class Funcionario extends Component {
                         <TabsContent>
                             <TabContent id='tabList'><List /></TabContent>
                             <TabContent id='tabCreate'><Form onSubmit={this.props.create} /></TabContent>
-                            <TabContent id='tabUpdate'><Form /></TabContent>
+                            <TabContent id='tabUpdate'><Form onSubmit={this.props.update} /></TabContent>
                             <TabContent id='tabDelete'><h1>Excluir</h1></TabContent>
                         </TabsContent>
                     </Tabs>
@@ -47,5 +47,5 @@ class Funcionario extends Component {
     }
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({ selectTab, showTabs, create }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ selectTab, showTabs, create, update }, dispatch)
 export default connect(null, mapDispatchToProps)(Funcionario)
