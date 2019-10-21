@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { getList, showUpdate } from './veiculoActions'
+import { getList, showUpdate, showDelete } from './veiculoActions'
 
 class VeiculoList extends Component {
 
@@ -21,6 +21,9 @@ class VeiculoList extends Component {
                 <td>
                     <button className='btn btn-warning' onClick={() => this.props.showUpdate(bc)}>
                         <i className='fa fa-pencil'></i>
+                    </button>
+                    <button className='btn btn-danger' onClick={() => this.props.showDelete(bc)}>
+                        <i className='fa fa-trash-o'></i>
                     </button>
                 </td>
             </tr>
@@ -51,5 +54,5 @@ class VeiculoList extends Component {
 }
 
 const mapStateToProps = state => ({ list: state.veiculo.list })
-const mapDispatchToProps = dispatch => bindActionCreators({ getList, showUpdate }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ getList, showUpdate, showDelete }, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(VeiculoList)

@@ -10,7 +10,7 @@ import TabsContent from '../common/tab/tabsContent'
 import TabHeader from '../common/tab/tabHeader'
 import TabContent from '../common/tab/tabContent'
 import { selectTab, showTabs } from '../common/tab/tabActions'
-import { create, update } from './estacionamentoActions'
+import { create, update, remove } from './estacionamentoActions'
 
 import List from './estacionamentoList'
 import Form from './estacionamentoForm'
@@ -38,7 +38,7 @@ class Estacionamento extends Component {
                             <TabContent id='tabList'><List /></TabContent>
                             <TabContent id='tabCreate'><Form onSubmit={this.props.create} /></TabContent>
                             <TabContent id='tabUpdate'><Form onSubmit={this.props.update} /></TabContent>
-                            <TabContent id='tabDelete'><h1>Excluir</h1></TabContent>
+                            <TabContent id='tabDelete'><Form onSubmit={this.props.remove} readOnly={true} /></TabContent>
                         </TabsContent>
                     </Tabs>
                 </Content>
@@ -47,5 +47,5 @@ class Estacionamento extends Component {
     }
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({ selectTab, showTabs, create, update }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ selectTab, showTabs, create, update, remove }, dispatch)
 export default connect(null, mapDispatchToProps)(Estacionamento)
