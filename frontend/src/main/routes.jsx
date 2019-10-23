@@ -11,11 +11,11 @@ import Veiculo from '../veiculo/veiculo'
 export default props => (
     <Router history={hashHistory}>
         <Route path='/' component={Maps} />
-        <Route path='/cliente' component={Cliente} />
-        <Route path='/estacionamento' component={Estacionamento} />
-        <Route path='/funcionario' component={Funcionario} />
-        <Route path='/pagamento' component={Pagamento} />
-        <Route path='/veiculo' component={Veiculo} />
+        <Route path='/clientes' component={Cliente} />
+        <Route path='/estacionamentos' component={Estacionamento} />
+        <Route path='/funcionarios' component={Funcionario} />
+        <Route path='/pagamentos' component={Pagamento} />
+        <Route path='/veiculos' component={Veiculo} />
         <Redirect from='*' to='/' />
     </Router>
 )

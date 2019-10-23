@@ -7,6 +7,15 @@ module.exports = function (server) {
     server.use('/api', router)
     
     // Routes
-    const cliente = require('../api/cliente/clienteService')
-    cliente.register(router, '/cliente')
+    const Cliente = require('../api/cliente/clienteService')
+    Cliente.register(router, '/clientes')
+
+    const Estacionamento = require('../api/estacionamento/estacionamentoService')
+    Estacionamento.register(router, '/estacionamentos')
+
+    const Funcionario = require('../api/funcionario/funcionarioService')
+    Funcionario.register(router, '/funcionarios')
+
+    const Pagamento = require('../api/pagamento/pagamentoService')
+    Pagamento.register(router, '/pagamentos')
 }
