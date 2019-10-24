@@ -17,13 +17,12 @@ class FuncionarioList extends Component {
                 <td>{bc.data_nasci}</td>
                 <td>{bc.cpf}</td>
                 <td>{bc.email}</td>
-                <td>{bc.senha}</td>
                 <td>{bc.celular}</td>
-                <td>{bc.estado}</td>
+                <td>{bc.estado_civil}</td>
                 <td>{bc.cep}</td>
                 <td>{bc.nome_rua}</td>
                 <td>{bc.complemento}</td>
-                <td>{bc.num_rua}</td>
+                <td>{bc.num_casa}</td>
                 <td>{bc.bairro}</td>
                 <td>{bc.cidade}</td>
                 <td>{bc.estado}</td>
@@ -50,7 +49,6 @@ class FuncionarioList extends Component {
                             <th>Data de Nascimento</th>
                             <th>CPF</th>
                             <th>Email</th>
-                            <th>Senha</th>
                             <th>Celular</th>
                             <th>Estado Civil</th>
                             <th>CEP</th>

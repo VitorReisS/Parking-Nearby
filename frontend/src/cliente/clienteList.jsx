@@ -26,7 +26,6 @@ class ClienteList extends Component {
                 <td>{bc.cidade}</td>
                 <td>{bc.estado}</td>
                 <td>{bc.email}</td>
-                <td>{bc.senha}</td>
                 <td>{bc.sexo}</td>
                 <td>
                     <button className='btn btn-warning' onClick={() => this.props.showUpdate(bc)}>
@@ -59,7 +58,6 @@ class ClienteList extends Component {
                             <th>Cidade</th>
                             <th>Estado</th>
                             <th>Email</th>
-                            <th>Senha</th>
                             <th>Sexo</th>
                             <th className='table-actions'>Ações</th>
                         </tr>

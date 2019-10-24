@@ -26,7 +26,6 @@ class ClienteForm extends Component {
                     <Field name='cidade' component={LabelAndInput} readOnly={readOnly} label='Cidade' cols='12 4' placeholder='Informe o nome da cidade' />
                     <Field name='estado' component={LabelAndInput} readOnly={readOnly} label='Estado' cols='12 4' placeholder='Informe o nome do estado' />
                     <Field name='email' component={LabelAndInput} readOnly={readOnly} label='Email' cols='12 4' placeholder='Informe o email' />
-                    <Field name='senha' component={LabelAndInput} readOnly={readOnly} label='Senha' cols='12 4' placeholder='Informe a senha' />
                     <Field name='sexo' component={LabelAndInput} readOnly={readOnly} label='Sexo' cols='12 4' placeholder='Informe o sexo' />
                 </div>
                 <div className='box-footer'>
