@@ -25,7 +25,7 @@ class Pagamento extends Component {
     render() {
         return (
             <div>
-                <ContentHeader title='Pagamento' small='Cadastro' />
+                <ContentHeader title='Pagamentos' small='Cadastro' />
                 <Content>
                     <Tabs>
                         <TabsHeader>

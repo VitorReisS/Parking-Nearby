@@ -25,7 +25,7 @@ class Veiculo extends Component {
     render() {
         return (
             <div>
-                <ContentHeader title='Veiculo' small='Cadastro' />
+                <ContentHeader title='Veiculos' small='Cadastro' />
                 <Content>
                     <Tabs>
                         <TabsHeader>

@@ -23,6 +23,7 @@ class EstacionamentoList extends Component {
                 <td>{bc.cidade}</td>
                 <td>{bc.valor_mensal}</td>
                 <td>{bc.valor_diario}</td>
+                <td>{bc.preco_veiculo}</td>
                 <td>{bc.tipo_pagamento}</td>
                 <td>{bc.descricao}</td>
                 <td>{bc.status}</td>

@@ -25,7 +25,7 @@ class Estacionamento extends Component {
     render() {
         return (
             <div>
-                <ContentHeader title='Estacionamento' small='Cadastro' />
+                <ContentHeader title='Estacionamentos' small='Cadastro' />
                 <Content>
                     <Tabs>
                         <TabsHeader>

@@ -23,6 +23,7 @@ class EstacionamentoForm extends Component {
                     <Field name='cidade' component={LabelAndInput} readOnly={readOnly} label='Cidade' cols='12 4' placeholder='Informe o nome da cidade' />
                     <Field name='valor_mensal' component={LabelAndInput} readOnly={readOnly} type='number' label='Valor Mensal' cols='12 4' placeholder='Informe o valor mensal' />
                     <Field name='valor_diario' component={LabelAndInput} readOnly={readOnly} type='number' label='Valor Diario' cols='12 4' placeholder='Informe o valor diario' />
+                    <Field name='preco_veiculo' component={LabelAndInput} readOnly={readOnly} type='number' label='Preço do Veiculo' cols='12 4' placeholder='Informe o preço do veiculo' />
                     <Field name='tipo_pagamento' component={LabelAndInput} readOnly={readOnly} label='Tipo de Pagamento' cols='12 4' placeholder='Informe o tipo de pagamento' />
                     <Field name='descricao' component={LabelAndInput} readOnly={readOnly} label='Descição' cols='12 4' placeholder='Informe uma descrição' />
                     <Field name='status' component={LabelAndInput} readOnly={readOnly} label='Status' cols='12 4' placeholder='Informe o status' />

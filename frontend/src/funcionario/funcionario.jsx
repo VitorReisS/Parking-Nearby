@@ -25,7 +25,7 @@ class Funcionario extends Component {
     render() {
         return (
             <div>
-                <ContentHeader title='Funcionario' small='Cadastro' />
+                <ContentHeader title='Funcionarios' small='Cadastro' />
                 <Content>
                     <Tabs>
                         <TabsHeader>
