@@ -21,7 +21,7 @@ class FuncionarioList extends Component {
                 <td>{bc.estado_civil}</td>
                 <td>{bc.cep}</td>
                 <td>{bc.nome_rua}</td>
-                <td>{bc.complemento}</td>
+                <td>{bc.completamento}</td>
                 <td>{bc.num_casa}</td>
                 <td>{bc.bairro}</td>
                 <td>{bc.cidade}</td>
@@ -63,7 +63,7 @@ class FuncionarioList extends Component {
                         </tr>
                     </thead>
                     <tbody>
-
+                        {this.renderRows()} 
                     </tbody>
                 </table>
             </div>
