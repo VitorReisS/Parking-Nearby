@@ -10,12 +10,12 @@ import TabsContent from '../common/tab/tabsContent'
 import TabHeader from '../common/tab/tabHeader'
 import TabContent from '../common/tab/tabContent'
 import { selectTab, showTabs } from '../common/tab/tabActions'
-import { create, update, remove } from './veiculoActions'
+import { create, update, remove } from './veiculoMensalActions'
 
-import List from './veiculoList'
-import Form from './veiculoForm'
+import List from './veiculoMensalList'
+import Form from './veiculoMensalForm'
 
-class Veiculo extends Component {
+class VeiculoMensal extends Component {
 
     componentWillMount() {
         this.props.selectTab('tabList')
@@ -25,7 +25,7 @@ class Veiculo extends Component {
     render() {
         return (
             <div>
-                <ContentHeader title='Veiculos' small='Cadastro' />
+                <ContentHeader title='Veiculos Mensais' small='Cadastro' />
                 <Content>
                     <Tabs>
                         <TabsHeader>
@@ -48,4 +48,4 @@ class Veiculo extends Component {
 }
 
 const mapDispatchToProps = dispatch => bindActionCreators({ selectTab, showTabs, create, update, remove }, dispatch)
-export default connect(null, mapDispatchToProps)(Veiculo)
+export default connect(null, mapDispatchToProps)(VeiculoMensal)

@@ -7,7 +7,8 @@ import ClienteReducer from '../cliente/clienteReducer'
 import EstacionamentoReducer from '../estacionamento/estacionamentoReducer'
 import FuncionarioReducer from '../funcionario/funcionarioReducer'
 import PagamentoReducer from '../pagamento/pagamentoReducer'
-import VeiculoReducer from '../veiculo/veiculoReducer'
+import VeiculoDiarioReducer from '../veiculoDiario/veiculoDiarioReducer'
+import VeiculoMensalReducer from '../veiculoMensal/veiculoMensalReducer'
 
 
 const rootReducer = combineReducers({
@@ -16,7 +17,8 @@ const rootReducer = combineReducers({
     estacionamento: EstacionamentoReducer,
     funcionario: FuncionarioReducer,
     pagamento: PagamentoReducer,
-    veiculo: VeiculoReducer,
+    veiculoDiario: VeiculoDiarioReducer,
+    veiculoMensal: VeiculoMensalReducer,
     form: formReducer,
     toastr: toastrReducer
 })

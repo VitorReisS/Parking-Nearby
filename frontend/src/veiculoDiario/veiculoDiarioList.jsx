@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { getList, showUpdate, showDelete } from './veiculoActions'
+import { getList, showUpdate, showDelete } from './veiculoDiarioActions'
 
-class VeiculoList extends Component {
+class VeiculoDiarioList extends Component {
 
     componentWillMount() {
         this.props.getList()
@@ -13,11 +13,16 @@ class VeiculoList extends Component {
         const list = this.props.list || []
         return list.map(bc => (
             <tr key={bc._id}>
-                <td>{bc.cliente}</td>
                 <td>{bc.placa}</td>
                 <td>{bc.tipo_veiculo}</td>
                 <td>{bc.data_entrada}</td>
                 <td>{bc.data_saida}</td>
+                <td>{bc.hora_entrada}</td>
+                <td>{bc.hora_saida}</td>
+                <td>{bc.valor}</td>
+                <td>{bc.funcionario}</td>
+                <td>{bc.tipo_pagamento}</td>
+                <td>{bc.status}</td>
                 <td>
                     <button className='btn btn-warning' onClick={() => this.props.showUpdate(bc)}>
                         <i className='fa fa-pencil'></i>
@@ -36,11 +41,16 @@ class VeiculoList extends Component {
                 <table className='table'>
                     <thead>
                         <tr>
-                            <th>CLiente</th>
                             <th>Placa</th>
                             <th>Tipo de Veiculo</th>
                             <th>Data entrada</th>
                             <th>Data Saida</th>
+                            <th>Hora Entrada</th>
+                            <th>Hora Saida</th>
+                            <th>Valor</th>
+                            <th>Funcionario</th>
+                            <th>Tipo de Pagamento</th>
+                            <th>Status</th>
                             <th className='table-actions'>Ações</th>
                         </tr>
                     </thead>
@@ -53,6 +63,6 @@ class VeiculoList extends Component {
     }
 }
 
-const mapStateToProps = state => ({ list: state.veiculo.list })
+const mapStateToProps = state => ({ list: state.veiculoDiario.list })
 const mapDispatchToProps = dispatch => bindActionCreators({ getList, showUpdate, showDelete }, dispatch)
-export default connect(mapStateToProps, mapDispatchToProps)(VeiculoList)
+export default connect(mapStateToProps, mapDispatchToProps)(VeiculoDiarioList)

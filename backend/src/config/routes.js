@@ -18,4 +18,10 @@ module.exports = function (server) {
 
     const Pagamento = require('../api/pagamento/pagamentoService')
     Pagamento.register(router, '/pagamentos')
+
+    const VeiculoDiario = require('../api/veiculoDiario/veiculoDiarioService')
+    VeiculoDiario.register(router, '/veiculoDiarios')
+
+    const VeiculoMensal = require('../api/veiculoMensal/veiculoMensalService')
+    VeiculoMensal.register(router, '/veiculoMensals')
 }
