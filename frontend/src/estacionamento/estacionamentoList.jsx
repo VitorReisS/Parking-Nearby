@@ -46,16 +46,16 @@ class EstacionamentoList extends Component {
                     <thead>
                         <tr>
                             <th>Nome</th>
-                            <th>Numeto de Vagas</th>
-                            <th>Horario</th>
+                            <th>Número de Vagas</th>
+                            <th>Horário</th>
                             <th>CEP</th>
                             <th>Nome da Rua</th>
-                            <th>Numeto da Casa</th>
+                            <th>Número da Casa</th>
                             <th>Bairro</th>
                             <th>Cidade</th>
                             <th>Valor Mensal</th>
-                            <th>Valor Diario</th>
-                            <th>Preço Veiculo</th>
+                            <th>Valor Diário</th>
+                            <th>Preço Veículo</th>
                             <th>Tipo de Pagamento</th>
                             <th>Descrição</th>
                             <th>Status</th>

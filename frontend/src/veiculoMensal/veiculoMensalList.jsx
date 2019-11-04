@@ -46,13 +46,13 @@ class VeiculoMensalList extends Component {
                             <th>Estacionamento</th>
                             <th>Cliente</th>
                             <th>Placa</th>
-                            <th>Tipo de Veiculo</th>
+                            <th>Tipo de Veículo</th>
                             <th>Data entrada</th>
-                            <th>Data Saida</th>
+                            <th>Data Saída</th>
                             <th>Hora Entrada</th>
-                            <th>Hora Saida</th>
+                            <th>Hora Saída</th>
                             <th>Valor</th>
-                            <th>Funcionario</th>
+                            <th>Funcionário</th>
                             <th>Tipo de Pagamento</th>
                             <th>Status</th>
                             <th className='table-actions'>Ações</th>

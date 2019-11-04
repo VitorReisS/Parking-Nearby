@@ -14,18 +14,18 @@ class EstacionamentoForm extends Component {
             <form role='form' onSubmit={handleSubmit}>
                 <div className='box-body'>
                     <Field name='nome' component={LabelAndInput} readOnly={readOnly} label='Nome' cols='12 4' placeholder='Informe o nome' />
-                    <Field name='num_vagas' component={LabelAndInput} readOnly={readOnly} type='number' label='Numero de Vagas' cols='12 4' placeholder='Informe o numero de vagas diponiveis' />
-                    <Field name='horario' component={LabelAndInput} readOnly={readOnly} label='Horario' cols='12 4' placeholder='Informe o horario' />
-                    <Field name='cep' component={LabelAndInput} readOnly={readOnly} type='number' label='CEP' cols='12 4' placeholder='Informe o cep' />
+                    <Field name='num_vagas' component={LabelAndInput} readOnly={readOnly} type='number' label='Número de Vagas' cols='12 4' placeholder='Informe o número de vagas disponíveis' />
+                    <Field name='horario' component={LabelAndInput} readOnly={readOnly} label='Horário' cols='12 4' placeholder='Informe o horário' />
+                    <Field name='cep' component={LabelAndInput} readOnly={readOnly} type='number' label='CEP' cols='12 4' placeholder='Informe o número do cep' />
                     <Field name='nome_rua' component={LabelAndInput} readOnly={readOnly} label='Nome da Rua' cols='12 4' placeholder='Informe o nome da rua' />
-                    <Field name='num_casa' component={LabelAndInput} readOnly={readOnly} type='number' label='Numero da Casa' cols='12 4' placeholder='Informe o numero da casa' />
+                    <Field name='num_casa' component={LabelAndInput} readOnly={readOnly} type='number' label='Número da Casa' cols='12 4' placeholder='Informe o número da casa' />
                     <Field name='bairro' component={LabelAndInput} readOnly={readOnly} label='Bairro' cols='12 4' placeholder='Informe o nome do bairro' />
                     <Field name='cidade' component={LabelAndInput} readOnly={readOnly} label='Cidade' cols='12 4' placeholder='Informe o nome da cidade' />
                     <Field name='valor_mensal' component={LabelAndInput} readOnly={readOnly} type='number' label='Valor Mensal' cols='12 4' placeholder='Informe o valor mensal' />
-                    <Field name='valor_diario' component={LabelAndInput} readOnly={readOnly} type='number' label='Valor Diario' cols='12 4' placeholder='Informe o valor diario' />
-                    <Field name='preco_veiculo' component={LabelAndInput} readOnly={readOnly} type='number' label='Preço do Veiculo' cols='12 4' placeholder='Informe o preço do veiculo' />
+                    <Field name='valor_diario' component={LabelAndInput} readOnly={readOnly} type='number' label='Valor Diário' cols='12 4' placeholder='Informe o valor diário' />
+                    <Field name='preco_veiculo' component={LabelAndInput} readOnly={readOnly} type='number' label='Preço do Veículo' cols='12 4' placeholder='Informe o preço do veículo' />
                     <Field name='tipo_pagamento' component={LabelAndInput} readOnly={readOnly} label='Tipo de Pagamento' cols='12 4' placeholder='Informe o tipo de pagamento' />
-                    <Field name='descricao' component={LabelAndInput} readOnly={readOnly} label='Descição' cols='12 4' placeholder='Informe uma descrição' />
+                    <Field name='descricao' component={LabelAndInput} readOnly={readOnly} label='Descrição' cols='12 4' placeholder='Informe uma descrição' />
                     <Field name='status' component={LabelAndInput} readOnly={readOnly} label='Status' cols='12 4' placeholder='Informe o status' />
                 </div>
                 <div className='box-footer'>

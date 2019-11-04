@@ -52,7 +52,7 @@ class ClienteList extends Component {
                             <th>RG</th>
                             <th>CEP</th>
                             <th>Nome da Rua</th>
-                            <th>Nuemro da Casa</th>
+                            <th>Número da Casa</th>
                             <th>Complemento</th>
                             <th>Bairro</th>
                             <th>Cidade</th>

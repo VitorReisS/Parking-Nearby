@@ -54,7 +54,7 @@ class FuncionarioList extends Component {
                             <th>CEP</th>
                             <th>Nome da Rua</th>
                             <th>Complemento</th>
-                            <th>Numero da Casa</th>
+                            <th>Número da Casa</th>
                             <th>Bairro</th>
                             <th>Cidade</th>
                             <th>Estado</th>

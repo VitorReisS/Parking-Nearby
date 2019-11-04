@@ -15,12 +15,12 @@ class ClienteForm extends Component {
                 <div className='box-body'>
                     <Field name='nome' component={LabelAndInput} readOnly={readOnly} label='Nome' cols='12 4' placeholder='Informe o nome' />
                     <Field name='data_nasci' component={LabelAndInput} readOnly={readOnly} label='Data de Nascimento' cols='12 4' placeholder='Informe a data de nascimento' />
-                    <Field name='celular' component={LabelAndInput} readOnly={readOnly} type='number' label='Celular' cols='12 4' placeholder='Informe o numero do celular' />
-                    <Field name='cpf' component={LabelAndInput} readOnly={readOnly} type='number' label='CPF' cols='12 4' placeholder='Informe o numero do CPF' />
-                    <Field name='rg' component={LabelAndInput} readOnly={readOnly} type='number' label='RG' cols='12 4' placeholder='Informe o numero do RG' />
-                    <Field name='cep' component={LabelAndInput} readOnly={readOnly} type='number' label='CEP' cols='12 4' placeholder='Informe o numero do CEP' />
+                    <Field name='celular' component={LabelAndInput} readOnly={readOnly} type='number' label='Celular' cols='12 4' placeholder='Informe o número do celular' />
+                    <Field name='cpf' component={LabelAndInput} readOnly={readOnly} type='number' label='CPF' cols='12 4' placeholder='Informe o número do CPF' />
+                    <Field name='rg' component={LabelAndInput} readOnly={readOnly} type='number' label='RG' cols='12 4' placeholder='Informe o número do RG' />
+                    <Field name='cep' component={LabelAndInput} readOnly={readOnly} type='number' label='CEP' cols='12 4' placeholder='Informe o número do CEP' />
                     <Field name='nome_rua' component={LabelAndInput} readOnly={readOnly} label='Nome da Rua' cols='12 4' placeholder='Informe o nome da rua' />
-                    <Field name='num_casa' component={LabelAndInput} readOnly={readOnly} type='number' label='Numero da Casa' cols='12 4' placeholder='Informe o numero da casa' />
+                    <Field name='num_casa' component={LabelAndInput} readOnly={readOnly} type='number' label='Número da Casa' cols='12 4' placeholder='Informe o número da casa' />
                     <Field name='complemento' component={LabelAndInput} readOnly={readOnly} label='Complemento' cols='12 4' placeholder='Informe o complemento' />
                     <Field name='bairro' component={LabelAndInput} readOnly={readOnly} label='Bairro' cols='12 4' placeholder='Informe o nome do bairro' />
                     <Field name='cidade' component={LabelAndInput} readOnly={readOnly} label='Cidade' cols='12 4' placeholder='Informe o nome da cidade' />
