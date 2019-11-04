@@ -63,7 +63,7 @@ class EstacionamentoList extends Component {
                         </tr>
                     </thead>
                     <tbody>
-
+                        {this.renderRows()}
                     </tbody>
                 </table>
             </div>

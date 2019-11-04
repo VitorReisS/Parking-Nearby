@@ -9,7 +9,6 @@ export default props => (
             <MenuItem path='#clientes' label='Clientes' icon='users' />
             <MenuItem path='#estacionamentos' label='Estacionamentos' icon='home' />
             <MenuItem path='#funcionarios' label='Funcionários' icon='user-circle' />
-            <MenuItem path='#pagamentos' label='Pagamentos' icon='usd' />
             <MenuItem path='#veiculoDiarios' label='Veículos Diarios' icon='car' />
             <MenuItem path='#veiculoMensals' label='Veículos Mensal' icon='car' />
         </MenuTree>

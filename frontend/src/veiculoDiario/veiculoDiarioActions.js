@@ -9,7 +9,7 @@ const INITIAL_VALUES = {}
 export function getList() {
     const request = axios.get(`${BASE_URL}/veiculoDiarios`)
     return {
-        type: 'VEICULOS_DIARIOS_FETCHED',
+        type: 'VEICULO_DIARIOS_FETCHED',
         payload: request
     }
 }

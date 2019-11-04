@@ -13,6 +13,7 @@ class VeiculoDiarioList extends Component {
         const list = this.props.list || []
         return list.map(bc => (
             <tr key={bc._id}>
+                <td>{bc.estacionamento}</td>
                 <td>{bc.placa}</td>
                 <td>{bc.tipo_veiculo}</td>
                 <td>{bc.data_entrada}</td>
@@ -41,6 +42,7 @@ class VeiculoDiarioList extends Component {
                 <table className='table'>
                     <thead>
                         <tr>
+                            <th>Estacionamento</th>
                             <th>Placa</th>
                             <th>Tipo de Veiculo</th>
                             <th>Data entrada</th>
@@ -55,7 +57,7 @@ class VeiculoDiarioList extends Component {
                         </tr>
                     </thead>
                     <tbody>
-
+                        {this.renderRows()}
                     </tbody>
                 </table>
             </div>

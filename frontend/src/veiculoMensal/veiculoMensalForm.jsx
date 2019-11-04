@@ -13,6 +13,7 @@ class VeiculoMensalForm extends Component {
         return (
             <form role='form' onSubmit={handleSubmit}>
                 <div className='box-body'>
+                    <Field name='estacionamento' component={LabelAndInput} readOnly={readOnly} label='Estacionamento' cols='12 4' placeholder='Informe o nome do estacionamento' />
                     <Field name='cliente' component={LabelAndInput} readOnly={readOnly} label='Cliente' cols='12 4' placeholder='Informe o nome do cliente' />
                     <Field name='placa' component={LabelAndInput} readOnly={readOnly} label='Placa' cols='12 4' placeholder='Informe a placa do carro' />
                     <Field name='tipo_veiculo' component={LabelAndInput} readOnly={readOnly} label='Tipo de Veiculo' cols='12 4' placeholder='Informe o tipo de veiculo' />

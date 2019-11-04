@@ -18,7 +18,7 @@ class FuncionarioForm extends Component {
                     <Field name='cpf' component={LabelAndInput} readOnly={readOnly} type='number' label='CPF' cols='12 4' placeholder='Informe o numero do CPF' />
                     <Field name='email' component={LabelAndInput} readOnly={readOnly} label='Email' cols='12 4' placeholder='Informe o email' />
                     <Field name='celular' component={LabelAndInput} readOnly={readOnly} type='number' label='Celular' cols='12 4' placeholder='Informe o numero do celular' />
-                    <Field name='estado_civil' component={LabelAndInput} readOnly={readOnly} label='Estado' cols='12 4' placeholder='Informe o nome do estado' />
+                    <Field name='estado_civil' component={LabelAndInput} readOnly={readOnly} label='Estado Civil' cols='12 4' placeholder='Informe o nome do estado civil' />
                     <Field name='cep' component={LabelAndInput} readOnly={readOnly} type='number' label='CEP' cols='12 4' placeholder='Informe o numero do CEP' />
                     <Field name='nome_rua' component={LabelAndInput} readOnly={readOnly} label='Nome da Rua' cols='12 4' placeholder='Informe o nome da rua' />
                     <Field name='completamento' component={LabelAndInput} readOnly={readOnly} label='Complemento' cols='12 4' placeholder='Informe o complemento' />

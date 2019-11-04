@@ -13,6 +13,7 @@ class VeiculoMensalList extends Component {
         const list = this.props.list || []
         return list.map(bc => (
             <tr key={bc._id}>
+                <td>{bc.estacionamento}</td>
                 <td>{bc.cliente}</td>
                 <td>{bc.placa}</td>
                 <td>{bc.tipo_veiculo}</td>
@@ -42,6 +43,7 @@ class VeiculoMensalList extends Component {
                 <table className='table'>
                     <thead>
                         <tr>
+                            <th>Estacionamento</th>
                             <th>Cliente</th>
                             <th>Placa</th>
                             <th>Tipo de Veiculo</th>
@@ -57,7 +59,7 @@ class VeiculoMensalList extends Component {
                         </tr>
                     </thead>
                     <tbody>
-
+                        {this.renderRows()}
                     </tbody>
                 </table>
             </div>

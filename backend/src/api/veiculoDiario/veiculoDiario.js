@@ -2,6 +2,7 @@ const restful = require('node-restful')
 const mongoose = restful.mongoose
 
 const veiculoDiarioSchema = new mongoose.Schema({
+    estacionamento: { type: mongoose.SchemaTypes.ObjectId, ref: 'Estacionamento' },
     placa: { type: String, required: [true, 'Informe a placa'] },
     tipo_veiculo: { type: mongoose.SchemaTypes.ObjectId, ref: 'Tipo_Veiculo' },
     data_entrada: { type: Date, required: [true, 'Informe a data de entrada'] },

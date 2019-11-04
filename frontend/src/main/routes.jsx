@@ -5,7 +5,6 @@ import Maps from '../maps/maps'
 import Cliente from '../cliente/cliente'
 import Estacionamento from '../estacionamento/estacionamento'
 import Funcionario from '../funcionario/funcionario'
-import Pagamento from '../pagamento/pagamento'
 import VeiculoDiario from '../veiculoDiario/veiculoDiario'
 import VeiculoMensal from '../veiculoMensal/veiculoMensal'
 
@@ -15,7 +14,6 @@ export default props => (
         <Route path='/clientes' component={Cliente} />
         <Route path='/estacionamentos' component={Estacionamento} />
         <Route path='/funcionarios' component={Funcionario} />
-        <Route path='/pagamentos' component={Pagamento} />
         <Route path='/veiculoDiarios' component={VeiculoDiario} />
         <Route path='/veiculoMensals' component={VeiculoMensal} />
         <Redirect from='*' to='/' />
