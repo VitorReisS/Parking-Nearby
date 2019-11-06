@@ -12,8 +12,9 @@ const estacionamentoSchema = new mongoose.Schema({
     cidade: { type: String, required: [true, 'Informe o nome da cidade'] },
     valor_mensal: { type: Number, required: [true, 'Informe o valor mensal'] },
     valor_diario: { type: Number, required: [true, 'Informe o valor diario'] },
-    preco_veiculo: { type: Number, required: [true, 'Informe o preço do veiculo'] },
-    tipo_pagamento: {type: mongoose.SchemaTypes.ObjectId, ref: 'Tipo_Pagamento' },
+    preco_camionete: { type: Number, required: [true, 'Informe o preço do camionete'] },
+    preco_carro: { type: Number, required: [true, 'Informe o preço do carro'] },
+    preco_moto: { type: Number, required: [true, 'Informe o preço do moto'] },
     descricao: { type: String },
     status: { type: String }
 })

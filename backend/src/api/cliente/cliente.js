@@ -3,7 +3,7 @@ const mongoose = restful.mongoose
 
 const clienteSchema = new mongoose.Schema({
     nome: { type: String, required: [true, 'Informe o nome'] },
-    data_nasci: { type: Date, required: [true, 'Informe a data de nascimento'] },
+    data_nasci: { type: String, required: [true, 'Informe a data de nascimento'] },
     celular: { type: Number, required: [true, 'Informe o numero de celular'] },
     cpf: { type: Number, required: [true, 'Informe o numero do CPF'] },
     rg: { type: Number, required: [true, 'Informe o numero do RG'] },

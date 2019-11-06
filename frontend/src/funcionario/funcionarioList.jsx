@@ -13,6 +13,7 @@ class FuncionarioList extends Component {
         const list = this.props.list || []
         return list.map(bc => (
             <tr key={bc._id}>
+                <td>{bc.estacionamento}</td>
                 <td>{bc.nome}</td>
                 <td>{bc.data_nasci}</td>
                 <td>{bc.cpf}</td>
@@ -45,6 +46,7 @@ class FuncionarioList extends Component {
                 <table className='table'>
                     <thead>
                         <tr>
+                            <th>Estacionamento</th>
                             <th>Nome</th>
                             <th>Data de Nascimento</th>
                             <th>CPF</th>

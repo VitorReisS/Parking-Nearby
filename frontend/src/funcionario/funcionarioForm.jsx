@@ -5,6 +5,7 @@ import { reduxForm, Field } from 'redux-form'
 
 import { init } from './funcionarioActions'
 import LabelAndInput from '../common/form/labelAndInput'
+import FormSexo from '../common/form/formSexo'
 
 class FuncionarioForm extends Component {
 
@@ -13,6 +14,7 @@ class FuncionarioForm extends Component {
         return (
             <form role='form' onSubmit={handleSubmit}>
                 <div className='box-body'>
+                    <Field name='estacionamento' component={LabelAndInput} readOnly={readOnly} label='Estacionamento' cols='12 4' placeholder='Informe o nome do estacionamento' />
                     <Field name='nome' component={LabelAndInput} readOnly={readOnly} label='Nome' cols='12 4' placeholder='Informe o nome' />
                     <Field name='data_nasci' component={LabelAndInput} readOnly={readOnly} label='Data de Nascimento' cols='12 4' placeholder='Informe a data de nascimento' />
                     <Field name='cpf' component={LabelAndInput} readOnly={readOnly} type='number' label='CPF' cols='12 4' placeholder='Informe o número do CPF' />
@@ -26,7 +28,7 @@ class FuncionarioForm extends Component {
                     <Field name='bairro' component={LabelAndInput} readOnly={readOnly} label='Bairro' cols='12 4' placeholder='Informe o nome do bairro' />
                     <Field name='cidade' component={LabelAndInput} readOnly={readOnly} label='Cidade' cols='12 4' placeholder='Informe o nome da cidade' />
                     <Field name='estado' component={LabelAndInput} readOnly={readOnly} label='Estado' cols='12 4' placeholder='Informe o nome do estado' />
-                    <Field name='sexo' component={LabelAndInput} readOnly={readOnly} label='Sexo' cols='12 4' placeholder='Informe o sexo' />
+                    <Field name='sexo' component={FormSexo} readOnly={readOnly} label='Sexo' cols='12 4' placeholder='Informe o sexo' />
                 </div>
                 <div className='box-footer'>
                     <button type='submit' className={`btn btn-${this.props.submitClass}`}>{this.props.submitLabel}</button>

@@ -23,8 +23,9 @@ class EstacionamentoList extends Component {
                 <td>{bc.cidade}</td>
                 <td>{bc.valor_mensal}</td>
                 <td>{bc.valor_diario}</td>
-                <td>{bc.preco_veiculo}</td>
-                <td>{bc.tipo_pagamento}</td>
+                <td>{bc.preco_camionete}</td>
+                <td>{bc.preco_carro}</td>
+                <td>{bc.preco_moto}</td>
                 <td>{bc.descricao}</td>
                 <td>{bc.status}</td>
                 <td>
@@ -55,8 +56,9 @@ class EstacionamentoList extends Component {
                             <th>Cidade</th>
                             <th>Valor Mensal</th>
                             <th>Valor Diário</th>
-                            <th>Preço Veículo</th>
-                            <th>Tipo de Pagamento</th>
+                            <th>Preço Camionete</th>
+                            <th>Preço Carro</th>
+                            <th>Preço Moto</th>
                             <th>Descrição</th>
                             <th>Status</th>
                             <th className='table-actions'>Ações</th>

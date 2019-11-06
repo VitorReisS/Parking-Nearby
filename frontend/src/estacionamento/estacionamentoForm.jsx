@@ -23,8 +23,9 @@ class EstacionamentoForm extends Component {
                     <Field name='cidade' component={LabelAndInput} readOnly={readOnly} label='Cidade' cols='12 4' placeholder='Informe o nome da cidade' />
                     <Field name='valor_mensal' component={LabelAndInput} readOnly={readOnly} type='number' label='Valor Mensal' cols='12 4' placeholder='Informe o valor mensal' />
                     <Field name='valor_diario' component={LabelAndInput} readOnly={readOnly} type='number' label='Valor Diário' cols='12 4' placeholder='Informe o valor diário' />
-                    <Field name='preco_veiculo' component={LabelAndInput} readOnly={readOnly} type='number' label='Preço do Veículo' cols='12 4' placeholder='Informe o preço do veículo' />
-                    <Field name='tipo_pagamento' component={LabelAndInput} readOnly={readOnly} label='Tipo de Pagamento' cols='12 4' placeholder='Informe o tipo de pagamento' />
+                    <Field name='preco_camionete' component={LabelAndInput} readOnly={readOnly} type='number' label='Preço da Camionete' cols='12 4' placeholder='Informe o preço da camionete' />
+                    <Field name='preco_carro' component={LabelAndInput} readOnly={readOnly} type='number' label='Preço do Carro' cols='12 4' placeholder='Informe o preço do carro' />
+                    <Field name='preco_moto' component={LabelAndInput} readOnly={readOnly} type='number' label='Preço da Moto' cols='12 4' placeholder='Informe o preço da Moto' />
                     <Field name='descricao' component={LabelAndInput} readOnly={readOnly} label='Descrição' cols='12 4' placeholder='Informe uma descrição' />
                     <Field name='status' component={LabelAndInput} readOnly={readOnly} label='Status' cols='12 4' placeholder='Informe o status' />
                 </div>
