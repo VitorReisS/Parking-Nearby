@@ -15,7 +15,7 @@ class FuncionarioForm extends Component {
             <form role='form' onSubmit={handleSubmit}>
                 <div className='box-body'>
                     <Field name='estacionamento' component={LabelAndInput} readOnly={readOnly} label='Estacionamento' cols='12 4' placeholder='Informe o nome do estacionamento' />
-                    <Field name='nome' component={LabelAndInput} readOnly={readOnly} label='Nome' cols='12 4' placeholder='Informe o nome' />
+                    <Field name='nome' component={LabelAndInput} readOnly={readOnly} label='Nome do Funcionário' cols='12 4' placeholder='Informe o nome do funcionário' />
                     <Field name='data_nasci' component={LabelAndInput} readOnly={readOnly} label='Data de Nascimento' cols='12 4' placeholder='Informe a data de nascimento' />
                     <Field name='cpf' component={LabelAndInput} readOnly={readOnly} type='number' label='CPF' cols='12 4' placeholder='Informe o número do CPF' />
                     <Field name='email' component={LabelAndInput} readOnly={readOnly} label='Email' cols='12 4' placeholder='Informe o email' />

@@ -17,8 +17,8 @@ class VeiculoDiarioList extends Component {
                 <td>{bc.placa}</td>
                 <td>{bc.tipo_veiculo}</td>
                 <td>{bc.data_entrada}</td>
-                <td>{bc.data_saida}</td>
                 <td>{bc.hora_entrada}</td>
+                <td>{bc.data_saida}</td>
                 <td>{bc.hora_saida}</td>
                 <td>{bc.valor}</td>
                 <td>{bc.funcionario}</td>
@@ -46,8 +46,8 @@ class VeiculoDiarioList extends Component {
                             <th>Placa</th>
                             <th>Tipo de Veículo</th>
                             <th>Data entrada</th>
-                            <th>Data Saída</th>
                             <th>Hora Entrada</th>
+                            <th>Data Saída</th>
                             <th>Hora Saída</th>
                             <th>Valor</th>
                             <th>Funcionário</th>

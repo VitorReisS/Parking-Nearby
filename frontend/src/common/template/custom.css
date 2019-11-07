@@ -12,6 +12,7 @@ button {
     width: 150px;
 }
 
-.tab-content {
+.tab-content, .button {
     overflow: auto;
+    margin-left: 5px;
 }

@@ -10,9 +10,9 @@ const veiculoMensalSchema = new mongoose.Schema({
     data_saida: { type: String },
     hora_entrada: { type: String, required: [true, 'Informe a hora entrada'] },
     hora_saida: { type: String },
-    valor: { type: Number, required: [true, 'Informe o valor'] },
-    fucionario: { type: String, required: [true, 'Informe o nome do funcionário'] },
-    tipo_pagamento: { type: String, required: [true, 'Informe o tipo de pagamento'] },
+    valor: { type: Number },
+    funcionario: { type: String, required: [true, 'Informe o nome do funcionário'] },
+    tipo_pagamento: { type: String },
     status: { type: String, required: [true, 'Informe o status'] }
 })
 

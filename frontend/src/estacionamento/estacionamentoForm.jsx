@@ -13,7 +13,7 @@ class EstacionamentoForm extends Component {
         return (
             <form role='form' onSubmit={handleSubmit}>
                 <div className='box-body'>
-                    <Field name='nome' component={LabelAndInput} readOnly={readOnly} label='Nome' cols='12 4' placeholder='Informe o nome' />
+                    <Field name='nome' component={LabelAndInput} readOnly={readOnly} label='Nome do Estacionamento' cols='12 4' placeholder='Informe o nome do estacionamento' />
                     <Field name='num_vagas' component={LabelAndInput} readOnly={readOnly} type='number' label='Número de Vagas' cols='12 4' placeholder='Informe o número de vagas disponíveis' />
                     <Field name='horario' component={LabelAndInput} readOnly={readOnly} label='Horário' cols='12 4' placeholder='Informe o horário' />
                     <Field name='cep' component={LabelAndInput} readOnly={readOnly} type='number' label='CEP' cols='12 4' placeholder='Informe o número do cep' />
@@ -22,7 +22,6 @@ class EstacionamentoForm extends Component {
                     <Field name='bairro' component={LabelAndInput} readOnly={readOnly} label='Bairro' cols='12 4' placeholder='Informe o nome do bairro' />
                     <Field name='cidade' component={LabelAndInput} readOnly={readOnly} label='Cidade' cols='12 4' placeholder='Informe o nome da cidade' />
                     <Field name='valor_mensal' component={LabelAndInput} readOnly={readOnly} type='number' label='Valor Mensal' cols='12 4' placeholder='Informe o valor mensal' />
-                    <Field name='valor_diario' component={LabelAndInput} readOnly={readOnly} type='number' label='Valor Diário' cols='12 4' placeholder='Informe o valor diário' />
                     <Field name='preco_camionete' component={LabelAndInput} readOnly={readOnly} type='number' label='Preço da Camionete' cols='12 4' placeholder='Informe o preço da camionete' />
                     <Field name='preco_carro' component={LabelAndInput} readOnly={readOnly} type='number' label='Preço do Carro' cols='12 4' placeholder='Informe o preço do carro' />
                     <Field name='preco_moto' component={LabelAndInput} readOnly={readOnly} type='number' label='Preço da Moto' cols='12 4' placeholder='Informe o preço da Moto' />

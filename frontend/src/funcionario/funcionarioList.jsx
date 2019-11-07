@@ -47,7 +47,7 @@ class FuncionarioList extends Component {
                     <thead>
                         <tr>
                             <th>Estacionamento</th>
-                            <th>Nome</th>
+                            <th>Nome do Funcionário</th>
                             <th>Data de Nascimento</th>
                             <th>CPF</th>
                             <th>Email</th>
