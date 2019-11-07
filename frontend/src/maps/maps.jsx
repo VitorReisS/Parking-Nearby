@@ -10,7 +10,7 @@ class Maps extends Component {
             <div>
                 <ContentHeader title='Maps' small='Versão 1.0' />
                 <Content>
-                    <img src={Foto} width="1100" height="500" />
+                    <img src={Foto} />
                 </Content>
             </div>
         )
