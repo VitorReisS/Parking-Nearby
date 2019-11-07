@@ -5,9 +5,13 @@
 }
 
 button {
-    margin-left: 5px;
+    margin-left: 5px !important;
 }
 
 .table-actions {
     width: 150px;
+}
+
+.tab-content {
+    overflow: auto;
 }
